@@ -4,14 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="Сайт компании, организующей круизы в Антарктику для туристов">
+    <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/montserrat.woff" as="font">
+    <link rel="preload" href="./fonts/montserrat.woff2" as="font">
+    <link rel="preload" href="./fonts/montserratbold.woff" as="font">
+    <link rel="preload" href="./fonts/montserratbold.woff2" as="font">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__navigation">
+            <a class="header__logo">
+              <picture>
+                <img src="img/svg/logo.svg" width="70" height="38" alt="Логотип компании Круизы в Антартику.">
+              </picture>
+            </a>
+            <ul class="header__navigation-list clear-list">
+              <li>
+                <a class="header__navigation-link" href="#">
+                  Преимущества
+                </a>
+              </li>
+              <li>
+                <a class="header__navigation-link" href="#">
+                  Направления
+                </a>
+              </li>
+              <li>
+                <a class="header__navigation-link" href="#">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li>
+                <a class="header__navigation-link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <button class="header__navigation-toggle" type="button">
+              <span class="visually-hidden">
+                Открыть меню.
+              </span>
+              <span class="header__navigation-toggle-text"></span>
+            </button>
+          </div>
+          <div class="header__hero">
+            <h1 class="header__hero-title">
+              Круизы в Антарктику
+            </h1>
+            <p class="header__hero-description">
+              Волшебный мир<br class="header__hyphenation">
+              айсбергов и пингвинов
+            </p>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">
