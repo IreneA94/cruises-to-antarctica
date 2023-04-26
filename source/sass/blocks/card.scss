@@ -1,0 +1,43 @@
+.card {
+  display: none;
+  padding: 35px 25px;
+  min-width: 260px;
+  min-height: 386px;
+  background-color: $color-tangaroa;
+  color: $color-alice-blue;
+  box-sizing: border-box;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.card__point-heading {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.card__point-text {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 7px;
+  color: $color-very-pale-blue;
+}
+
+.card__link {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: $color-tangaroa;
+  padding: 14px 46px;
+  background-color: $color-alice-blue;
+}

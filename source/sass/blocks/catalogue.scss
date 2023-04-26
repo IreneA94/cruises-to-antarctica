@@ -1,0 +1,93 @@
+.catalogue__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 65px 25px;
+
+  @media (min-width: $vp-768) {
+    padding: 100px 60px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 95px 118px 120px 118px;
+  }
+}
+
+.catalogue__title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: $color-tangaroa;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $vp-768) {
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 60px;
+  }
+}
+
+.catalogue__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.catalogue__item {
+  cursor: pointer;
+
+  &:hover > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+  }
+
+  &:hover > .catalogue__item-photo {
+    display: none;
+  }
+}
+
+.catalogue__item-photo {
+  position: relative;
+  min-width: 260px;
+  min-height: 386px;
+  box-sizing: border-box;
+
+  &--1 {
+    background-image: url("../img/catalogue-1.jpg");
+  }
+  &--2 {
+    background-image: url("../img/catalogue-2.jpg");
+  }
+  &--3 {
+    background-image: url("../img/catalogue-3.jpg");
+  }
+  &--4 {
+    background-image: url("../img/catalogue-4.jpg");
+  }
+  &--5 {
+    background-image: url("../img/catalogue-5.jpg");
+  }
+  &--6 {
+    background-image: url("../img/catalogue-6.jpg");
+  }
+  &--7 {
+    background-image: url("../img/catalogue-7.jpg");
+  }
+  &--8 {
+    background-image: url("../img/catalogue-8.jpg");
+  }
+}
+
+.catalogue__item-photo-title {
+  position: absolute;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $color-alice-blue;
+  margin-top: auto;
+  margin-bottom: 0;
+  left: 30px;
+  bottom: 30px;
+}
