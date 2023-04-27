@@ -1,11 +1,22 @@
 .card {
   display: none;
   padding: 35px 25px;
-  min-width: 260px;
+  min-width: 270px;
+  max-width: 270px;
   min-height: 386px;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
   box-sizing: border-box;
+
+  @media (min-width: $vp-768) {
+    min-width: 309px;
+    max-width: 309px;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 260px;
+    max-width: 260px;
+  }
 }
 
 .card__title {
@@ -40,4 +51,5 @@
   color: $color-tangaroa;
   padding: 14px 46px;
   background-color: $color-alice-blue;
+  text-align: center;
 }

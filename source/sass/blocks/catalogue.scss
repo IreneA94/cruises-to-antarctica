@@ -22,16 +22,30 @@
   margin-bottom: 40px;
 
   @media (min-width: $vp-768) {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $vp-1024) {
     font-size: 28px;
     line-height: 42px;
-    margin-bottom: 60px;
   }
 }
 
 .catalogue__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $vp-1024) {
+    gap: 15px;
+  }
+
+  @media (min-width: $vp-1280) {
+    gap: 30px;
+  }
 }
 
 .catalogue__item {
@@ -50,9 +64,19 @@
 
 .catalogue__item-photo {
   position: relative;
-  min-width: 260px;
+  min-width: 270px;
   min-height: 386px;
   box-sizing: border-box;
+  background-size: cover;
+
+  @media (min-width: $vp-768) {
+    min-width: 309px;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 260px;
+    background-size: contain;
+  }
 
   &--1 {
     background-image: url("../img/catalogue-1.jpg");
