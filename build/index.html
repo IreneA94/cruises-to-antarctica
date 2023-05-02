@@ -468,6 +468,64 @@
             </ul>
           </div>
         </section>
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <div class="feedback__text">
+              <h2 class="feedback__title">
+                Раннее бронирование
+              </h2>
+              <p class="feedback__offer">
+                Забронируйте тур<br class="feedback__hyphenation__mobile">
+                за&nbsp;3&ndash;6&nbsp;месяцев<br class="feedback__hyphenation">
+                до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
+              </p>
+            </div>
+            <div class="form" data-form-validate="data-form-validate" data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="form__fieldset">
+                  <p class="form__text">
+                    Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+                  </p>
+                  <div class="form__fields">
+                    <div data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                      <label class="visually-hidden" for="form-name">Поля для ввода имени</label>
+                      <input type="text" name="name" id="form-name" required placeholder="Имя">
+                    </div>
+                    <div class="is-valid" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="">
+                      <label class="visually-hidden" for="form-phone">Поле для ввода телефона</label>
+                      <input type="tel" name="phone" id="form-phone" required placeholder="Телефон">
+                    </div>
+                    <div class="is-valid" data-validate-type="email" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="">
+                      <label class="visually-hidden" for="form-email">Поле для ввода email</label>
+                      <input type="tel" name="email" id="form-email" required placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form__ending-wrapper">
+                    <div class="form__checkbox-wrapper">
+                      <div class="checkbox">
+                        <div data-validate-type="checkbox" data-message-base="Без согласия на обработку персональных данных форма не может быть отправлена" data-required>
+                          <label class="checkbox__label">
+                            <input class="checkbox__input" type="checkbox" name="subscription-policy" required checked>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                              Я&nbsp;согласен на&nbsp;обработку<br class="checkbox__text-hyphenation">
+                              моих персональных данных
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__button-wrapper">
+                      <button class="form__button" type="submit">
+                        Оставить заявку
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__wrapper">

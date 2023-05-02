@@ -96,6 +96,10 @@
   }
 
   @media (min-width: $vp-1024) {
+    padding: 175px 150px 285px 150px;
+  }
+
+  @media (min-width: $vp-1280) {
     padding: 175px 200px 285px 200px;
   }
 }
