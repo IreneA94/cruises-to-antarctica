@@ -11,9 +11,9 @@
   gap: 40px;
 
   @media (min-width: $vp-768) {
-    flex-direction: row;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
     padding: 100px 45px;
     gap: 30px;
   }
@@ -79,23 +79,24 @@
 
 /*Карта*/
 
+.contacts__wrapper {
+  width: 100%;
+}
+
 .contacts__map {
   background-color: $color-tangaroa;
-  min-width: 290px;
+  width: 100%;
   min-height: 316px;
 
   @media (min-width: $vp-768) {
-    min-width: 324px;
     min-height: 335px;
   }
 
   @media (min-width: $vp-1024) {
-    min-width: 400px;
     min-height: 306px;
   }
 
   @media (min-width: $vp-1280) {
-    min-width: 560px;
     min-height: 306px;
   }
 }
