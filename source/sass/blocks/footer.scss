@@ -65,6 +65,8 @@
   gap: 23px;
 
   @media (min-width: $vp-768) {
+    max-width: 600px;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
@@ -74,6 +76,7 @@
 }
 
 .footer__link {
+  user-select: none;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -86,6 +89,11 @@
 
   @media (min-width: $vp-1280) {
     font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-sky-blue;
   }
 }
 
@@ -105,11 +113,17 @@
 }
 
 .footer__social-link-illustration {
+  color: $color-alice-blue;
   width: 16px;
   height: 16px;
 
   @media (min-width: $vp-1024) {
     width: 20px;
     height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-sky-blue;
   }
 }

@@ -56,13 +56,15 @@
 .catalogue__item {
   cursor: pointer;
 
-  &:hover > .card {
+  &:hover > .card,
+  &:focus > .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
   }
 
-  &:hover > .catalogue__item-photo {
+  &:hover > .catalogue__item-photo,
+  &:focus > .catalogue__item-photo {
     display: none;
   }
 }
@@ -72,7 +74,6 @@
   min-width: 270px;
   min-height: 386px;
   box-sizing: border-box;
-  background-size: cover;
 
   @media (min-width: $vp-768) {
     min-width: 309px;
@@ -80,32 +81,6 @@
 
   @media (min-width: $vp-1024) {
     min-width: 260px;
-    background-size: contain;
-  }
-
-  &--1 {
-    background-image: url("../img/catalogue-1.jpg");
-  }
-  &--2 {
-    background-image: url("../img/catalogue-2.jpg");
-  }
-  &--3 {
-    background-image: url("../img/catalogue-3.jpg");
-  }
-  &--4 {
-    background-image: url("../img/catalogue-4.jpg");
-  }
-  &--5 {
-    background-image: url("../img/catalogue-5.jpg");
-  }
-  &--6 {
-    background-image: url("../img/catalogue-6.jpg");
-  }
-  &--7 {
-    background-image: url("../img/catalogue-7.jpg");
-  }
-  &--8 {
-    background-image: url("../img/catalogue-8.jpg");
   }
 }
 
@@ -119,4 +94,11 @@
   margin-bottom: 0;
   left: 30px;
   bottom: 30px;
+}
+
+.catalogue__illustration {
+  img {
+    display: block;
+    width: 100%;
+  }
 }

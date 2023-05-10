@@ -3,6 +3,7 @@
 }
 
 .contacts__wrapper {
+  width: 100%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 65px 15px;
@@ -75,18 +76,20 @@
   align-items: center;
   gap: 10px;
   margin: 0;
+
+  &:hover,
+  &:focus {
+    color: $color-sky-blue;
+  }
 }
 
 /*Карта*/
-
-.contacts__wrapper {
-  width: 100%;
-}
 
 .contacts__map {
   background-color: $color-tangaroa;
   width: 100%;
   min-height: 316px;
+  border: none;
 
   @media (min-width: $vp-768) {
     min-height: 335px;

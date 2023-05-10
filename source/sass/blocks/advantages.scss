@@ -63,6 +63,28 @@
   @media (min-width: $vp-1280) {
     padding: 30px 30px 50px 30px;
   }
+
+  h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: $color-tangaroa;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    br {
+      @media (min-width: $vp-1024) {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-tangaroa;
+    margin: 0;
+  }
 }
 
 .advantages__illustration {
@@ -97,26 +119,4 @@
       height: 32px;
     }
   }
-}
-
-.advantages__list-title {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 500;
-  color: $color-tangaroa;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.advantages__hyphenation {
-  @media (min-width: $vp-1024) {
-    display: none;
-  }
-}
-
-.advantages__list-text {
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-tangaroa;
-  margin: 0;
 }

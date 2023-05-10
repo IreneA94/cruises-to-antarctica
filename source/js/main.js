@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {nav, navLink} from './modules/burger-menu/burger-menu';
+import {nav} from './modules/burger-menu/burger-menu';
 
 // ---------------------------------
 
@@ -23,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     nav();
-    navLink();
   });
 });
 

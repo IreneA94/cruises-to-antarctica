@@ -1,30 +1,40 @@
-let header = document.querySelector('.header__navigation');
-let toggle = document.querySelector('.header__navigation-toggle');
-let links = document.querySelectorAll('.header__navigation-link');
+let header = document.querySelector('[data-navigation-status="header-navigation"]');
+let toggle = document.querySelector('[data-toggle-status="header-navigation-toggle"]');
+let links = document.querySelectorAll('[data-link-status="header-navigation-link"]');
+let body = document.querySelector('body');
 
-header.classList.remove('header__navigation--nojs');
+header.classList.remove('nojs');
 
 let nav = function () {
-  toggle.addEventListener('click', function () {
-    if (header.classList.contains('header__navigation--closed')) {
-      header.classList.remove('header__navigation--closed');
-      header.classList.add('header__navigation--opened');
-    } else {
-      header.classList.add('header__navigation--closed');
-      header.classList.remove('header__navigation--opened');
-    }
-  });
-};
 
-let navLink = function () {
-  for (let link of links) {
-    link.addEventListener('click', function () {
-      if (header.classList.contains('header__navigation--opened')) {
-        header.classList.remove('header__navigation--opened');
-        header.classList.add('header__navigation--closed');
+  let navBurger = function () {
+    toggle.addEventListener('click', function () {
+      if (header.classList.contains('is-closed')) {
+        header.classList.remove('is-closed');
+        header.classList.add('is-opened');
+        body.style.overflow = 'hidden';
+      } else {
+        header.classList.add('is-closed');
+        header.classList.remove('is-opened');
+        body.style.overflow = 'visible';
       }
     });
-  }
+  };
+
+  let navLink = function () {
+    for (let link of links) {
+      link.addEventListener('click', function () {
+        if (header.classList.contains('is-opened')) {
+          header.classList.remove('is-opened');
+          header.classList.add('is-closed');
+          body.style.overflow = 'visible';
+        }
+      });
+    }
+  };
+
+  navBurger();
+  navLink();
 };
 
-export {nav, navLink};
+export {nav};
