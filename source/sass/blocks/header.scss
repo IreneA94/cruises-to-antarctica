@@ -40,6 +40,13 @@
 .header__logo {
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-sky-blue;
+    }
+  }
+
   svg {
     fill: $color-alice-blue;
     width: 42px;
@@ -104,6 +111,10 @@
   width: 24px;
   height: 16px;
 
+  &:hover {
+    background-image: url("../img/svg/menu-toggle-hover-focus.svg");
+  }
+
   @media (min-width: $vp-768) {
     display: none;
   }
@@ -138,6 +149,11 @@
     .header__logo {
       svg {
         fill: $color-tangaroa;
+
+        &:hover,
+        &:focus {
+          fill: $color-sky-blue;
+        }
       }
     }
 
@@ -164,6 +180,11 @@
       font-size: 18px;
       line-height: 22px;
       font-weight: 500;
+
+      &:hover,
+      &:focus {
+        color: $color-sky-blue;
+      }
     }
   }
 
@@ -173,6 +194,10 @@
     background-position: 50% 50%;
     width: 13px;
     height: 13px;
+
+    &:hover {
+      background-image: url("../img/svg/cross-hover-focus.svg");
+    }
   }
 
   .nojs .header__navigation {

@@ -42,6 +42,13 @@
 .footer__logo {
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-sky-blue;
+    }
+  }
+
   svg {
     fill: $color-alice-blue;
     width: 42px;

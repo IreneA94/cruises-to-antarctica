@@ -65,6 +65,8 @@ export class Form {
         setTimeout(() => {
           this.reset(event.target);
         }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
+        // eslint-disable-next-line no-alert
+        alert('Форма успешно отправлена!');
       }
       return;
     }
@@ -93,8 +95,6 @@ export class Form {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       this._onFormSubmit(event, callback);
-      // eslint-disable-next-line no-alert
-      alert('Форма успешно отправлена!');
     });
 
     form.addEventListener('input', (event) => {

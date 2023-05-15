@@ -939,7 +939,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 30px;
 }
 
 .checkbox__text {
@@ -1143,6 +1142,11 @@ button,
   cursor: pointer;
 }
 
+.header__logo:hover svg,
+.header__logo:focus svg {
+  fill: #bcdffb;
+}
+
 .header__logo svg {
   fill: #f9fbfd;
   width: 42px;
@@ -1182,6 +1186,10 @@ button,
   background-position: 50% 50%;
   width: 24px;
   height: 16px;
+}
+
+.header__navigation-toggle:hover {
+  background-image: url("../img/svg/menu-toggle-hover-focus.svg");
 }
 
 /*Hero*/
@@ -1240,6 +1248,11 @@ button,
 
 .footer__logo {
   cursor: pointer;
+}
+
+.footer__logo:hover svg,
+.footer__logo:focus svg {
+  fill: #bcdffb;
 }
 
 .footer__logo svg {
@@ -1444,6 +1457,7 @@ button,
   text-align: center;
   outline: none;
   border: none;
+  margin-top: 30px;
 }
 
 .form__button:hover,
@@ -2656,6 +2670,11 @@ button,
     fill: #011c40;
   }
 
+  .is-opened .header__logo svg:hover,
+  .is-opened .header__logo svg:focus {
+    fill: #bcdffb;
+  }
+
   .is-opened::before {
     content: "";
     position: absolute;
@@ -2686,12 +2705,21 @@ button,
     font-weight: 500;
   }
 
+  .is-opened .header__navigation-links .header__navigation-link:hover,
+  .is-opened .header__navigation-links .header__navigation-link:focus {
+    color: #bcdffb;
+  }
+
   .is-opened .header__navigation-toggle {
     background-image: url("../img/svg/cross.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     width: 13px;
     height: 13px;
+  }
+
+  .is-opened .header__navigation-toggle:hover {
+    background-image: url("../img/svg/cross-hover-focus.svg");
   }
 
   .nojs .header__navigation {
