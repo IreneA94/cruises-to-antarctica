@@ -2,14 +2,14 @@
   max-width: 1366px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 65px 15px 85px 16px;
+  padding: 55px 15px 85px 16px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   background-color: $color-alice-blue;
 
   @media (min-width: $vp-768) {
-    padding: 100px 45px;
+    padding: 100px 45px 78px 45px;
     flex-direction: row;
     gap: 30px;
   }
@@ -28,16 +28,19 @@
     font-weight: 600;
     color: $color-tangaroa;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     @media (min-width: $vp-768) {
-      font-size: 28px;
+      margin-top: -10px;
+      font-size: 26px;
       line-height: 36px;
     }
 
     @media (min-width: $vp-1024) {
+      font-size: 28px;
       line-height: 42px;
-      margin-bottom: 40px;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
 
     br {

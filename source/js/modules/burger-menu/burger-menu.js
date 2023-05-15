@@ -3,38 +3,27 @@ let toggle = document.querySelector('[data-toggle-status="header-navigation-togg
 let links = document.querySelectorAll('[data-link-status="header-navigation-link"]');
 let body = document.querySelector('body');
 
-header.classList.remove('nojs');
+let initNav = function () {
+  if (header && toggle && links) {
+    header.classList.remove('nojs');
 
-let nav = function () {
+    let toggleMenu = function () {
+      let isOpened = header.classList.contains('is-opened');
+      header.classList.toggle('is-opened');
+      header.classList.toggle('is-closed');
+      body.style.overflow = isOpened ? 'visible' : 'hidden';
+    };
 
-  let navBurger = function () {
     toggle.addEventListener('click', function () {
-      if (header.classList.contains('is-closed')) {
-        header.classList.remove('is-closed');
-        header.classList.add('is-opened');
-        body.style.overflow = 'hidden';
-      } else {
-        header.classList.add('is-closed');
-        header.classList.remove('is-opened');
-        body.style.overflow = 'visible';
-      }
+      toggleMenu();
     });
-  };
 
-  let navLink = function () {
     for (let link of links) {
       link.addEventListener('click', function () {
-        if (header.classList.contains('is-opened')) {
-          header.classList.remove('is-opened');
-          header.classList.add('is-closed');
-          body.style.overflow = 'visible';
-        }
+        toggleMenu();
       });
     }
-  };
-
-  navBurger();
-  navLink();
+  }
 };
 
-export {nav};
+export {initNav};

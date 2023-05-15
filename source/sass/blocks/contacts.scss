@@ -6,16 +6,16 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 65px 15px;
+  padding: 57px 15px 60px 15px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 
   @media (min-width: $vp-768) {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 45px;
+    padding: 100px 45px 93px 45px;
     gap: 30px;
   }
 
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $vp-1280) {
-    padding: 120px 103px;
+    padding: 120px 103px 114px 103px;
     gap: 100px;
   }
 }
@@ -49,7 +49,11 @@
   font-weight: 500;
   color: $color-tangaroa;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
+
+  @media (min-width: $vp-768) {
+    margin-top: -10px;
+  }
 }
 
 .contacts__adress {
@@ -57,12 +61,12 @@
   line-height: 24px;
   color: $color-tangaroa;
   display: flex;
-  align-items: center;
   gap: 10px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   svg {
+    margin-top: 5px;
     min-width: 18px;
     min-height: 22px;
   }
@@ -101,5 +105,6 @@
 
   @media (min-width: $vp-1280) {
     min-height: 306px;
+    min-width: 560px;
   }
 }

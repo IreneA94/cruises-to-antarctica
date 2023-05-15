@@ -1,19 +1,19 @@
 .catalogue__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 65px 25px;
+  padding: 55px 25px 65px 25px;
   background-color: $color-alice-blue;
 
   @media (min-width: $vp-768) {
-    padding: 100px 60px;
+    padding: 90px 60px 100px 60px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 95px 45px 120px 45px;
+    padding: 85px 45px 120px 45px;
   }
 
   @media (min-width: $vp-1280) {
-    padding: 95px 118px 120px 118px;
+    padding: 85px 118px 120px 118px;
   }
 }
 
@@ -24,12 +24,12 @@
   color: $color-tangaroa;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   @media (min-width: $vp-768) {
     font-size: 26px;
     line-height: 39px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $vp-1024) {
@@ -54,26 +54,28 @@
 }
 
 .catalogue__item {
-  cursor: pointer;
+  position: relative;
 
   &:hover > .card,
   &:focus > .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    opacity: 1;
+    transition: 1s;
   }
 
   &:hover > .catalogue__item-photo,
   &:focus > .catalogue__item-photo {
-    display: none;
+    opacity: 0;
   }
 }
 
 .catalogue__item-photo {
-  position: relative;
   min-width: 270px;
-  min-height: 386px;
   box-sizing: border-box;
+  opacity: 1;
+
+  img {
+    height: 386px;
+  }
 
   @media (min-width: $vp-768) {
     min-width: 309px;
@@ -92,8 +94,18 @@
   color: $color-alice-blue;
   margin-top: auto;
   margin-bottom: 0;
-  left: 30px;
-  bottom: 30px;
+  left: 24px;
+  bottom: 15px;
+
+  @media (min-width: $vp-768) {
+    left: 35px;
+    bottom: 25px;
+  }
+
+  @media (min-width: $vp-1024) {
+    left: 30px;
+    bottom: 22px;
+  }
 }
 
 .catalogue__illustration {

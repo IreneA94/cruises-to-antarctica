@@ -1,6 +1,12 @@
 .card {
-  display: none;
-  padding: 35px 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding: 30px 25px;
   min-width: 270px;
   max-width: 270px;
   min-height: 386px;
@@ -20,12 +26,13 @@
 
   a {
     display: block;
+    cursor: pointer;
     user-select: none;
     font-size: 14px;
     line-height: 21px;
     font-weight: 600;
     color: $color-tangaroa;
-    padding: 14px 46px;
+    padding: 12px 46px;
     background-color: $color-alice-blue;
     text-align: center;
 
@@ -41,12 +48,16 @@
   max-height: 260px;
   overflow-y: scroll;
 
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   h4 {
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   h5 {
@@ -61,7 +72,7 @@
     display: block;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 13px;
     color: $color-very-pale-blue;
   }
 }

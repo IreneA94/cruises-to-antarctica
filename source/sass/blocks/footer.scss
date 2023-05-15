@@ -8,7 +8,7 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 40px 15px;
-  gap: 30px;
+  gap: 25px;
 
   @media (min-width: $vp-768) {
     padding: 50px 45px;
@@ -26,7 +26,7 @@
 .footer__navigation {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 
   @media (min-width: $vp-768) {
     flex-direction: row;
@@ -62,15 +62,18 @@
 .footer__links-list {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 8px;
 
   @media (min-width: $vp-768) {
     max-width: 600px;
+    gap: 23px;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: -7px;
   }
 
   @media (min-width: $vp-1024) {
+    margin-top: 0;
     gap: 33px;
   }
 }
@@ -100,7 +103,12 @@
 .footer__social-links-list {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
+  margin-left: -2px;
+
+  @media (min-width: $vp-768) {
+    margin-left: 0;
+  }
 
   @media (min-width: $vp-1024) {
     gap: 27px;
