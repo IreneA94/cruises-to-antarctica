@@ -150,8 +150,8 @@
       svg {
         fill: $color-tangaroa;
 
-        &:hover,
-        &:focus {
+        &:focus,
+        &:active {
           fill: $color-sky-blue;
         }
       }
@@ -181,8 +181,8 @@
       line-height: 22px;
       font-weight: 500;
 
-      &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: $color-sky-blue;
       }
     }
@@ -195,7 +195,8 @@
     width: 13px;
     height: 13px;
 
-    &:hover {
+    &:focus,
+    &:active {
       background-image: url("../img/svg/cross-hover-focus.svg");
     }
   }

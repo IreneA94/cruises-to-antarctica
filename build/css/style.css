@@ -2670,8 +2670,8 @@ button,
     fill: #011c40;
   }
 
-  .is-opened .header__logo svg:hover,
-  .is-opened .header__logo svg:focus {
+  .is-opened .header__logo svg:focus,
+  .is-opened .header__logo svg:active {
     fill: #bcdffb;
   }
 
@@ -2705,8 +2705,8 @@ button,
     font-weight: 500;
   }
 
-  .is-opened .header__navigation-links .header__navigation-link:hover,
-  .is-opened .header__navigation-links .header__navigation-link:focus {
+  .is-opened .header__navigation-links .header__navigation-link:focus,
+  .is-opened .header__navigation-links .header__navigation-link:active {
     color: #bcdffb;
   }
 
@@ -2718,7 +2718,8 @@ button,
     height: 13px;
   }
 
-  .is-opened .header__navigation-toggle:hover {
+  .is-opened .header__navigation-toggle:focus,
+  .is-opened .header__navigation-toggle:active {
     background-image: url("../img/svg/cross-hover-focus.svg");
   }
 
