@@ -13,6 +13,10 @@
   @media (min-width: $vp-768) {
     padding: 47px;
   }
+
+  @media (min-width: $vp-1024) {
+    padding: 44px 47px 50px 47px;
+  }
 }
 
 .form__text {
@@ -80,7 +84,6 @@
   text-align: center;
   outline: none;
   border: none;
-  margin-top: 30px;
 
   &:hover,
   &:focus,
@@ -90,16 +93,24 @@
   }
 }
 
-.is-valid {
+.is-valid,
+.is-invalid {
+  position: relative;
+
   .input-message {
-    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 10px;
     color: $color-alice-blue;
   }
-}
 
-.is-invalid {
-  .input-message {
-    font-size: 12px;
+  .checkbox__label + .input-message {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    font-size: 8px;
+    line-height: 8px;
     color: $color-alice-blue;
   }
 }

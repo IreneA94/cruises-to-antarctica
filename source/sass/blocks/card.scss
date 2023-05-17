@@ -7,22 +7,11 @@
   left: 0;
   opacity: 0;
   padding: 30px 25px;
-  min-width: 270px;
-  max-width: 270px;
+  width: 100%;
   min-height: 386px;
   background-color: $color-tangaroa;
   color: $color-alice-blue;
   box-sizing: border-box;
-
-  @media (min-width: $vp-768) {
-    min-width: 309px;
-    max-width: 309px;
-  }
-
-  @media (min-width: $vp-1024) {
-    min-width: 260px;
-    max-width: 260px;
-  }
 
   a {
     display: block;
@@ -47,6 +36,7 @@
 .card__text {
   max-height: 260px;
   overflow-y: scroll;
+  scrollbar-width: none;
 
   &::-webkit-scrollbar {
     width: 0;

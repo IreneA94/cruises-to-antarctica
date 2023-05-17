@@ -156,17 +156,6 @@
         }
       }
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -15%;
-      z-index: 2;
-      background-color: rgba(0, 43, 102, 0.5);
-      width: 115%;
-      height: 100%;
-    }
   }
 
   .is-opened .header__navigation-links {
@@ -195,7 +184,6 @@
     width: 13px;
     height: 13px;
 
-    &:focus,
     &:active {
       background-image: url("../img/svg/cross-hover-focus.svg");
     }
@@ -263,11 +251,5 @@
   @media (min-width: $vp-1024) {
     font-size: 20px;
     line-height: 24px;
-  }
-}
-
-.header__hyphenation {
-  @media (min-width: $vp-768) {
-    display: none;
   }
 }

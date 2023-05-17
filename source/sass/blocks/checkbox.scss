@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 30px;
+
+  @media (min-width: $vp-1024) {
+    margin-left: 1px;
+  }
 }
 
 .checkbox__text {

@@ -1,8 +1,11 @@
+.catalogue {
+  background-color: $color-alice-blue;
+}
+
 .catalogue__wrapper {
   max-width: 1366px;
   margin: 0 auto;
   padding: 55px 25px 65px 25px;
-  background-color: $color-alice-blue;
 
   @media (min-width: $vp-768) {
     padding: 90px 60px 100px 60px;
@@ -39,17 +42,20 @@
 }
 
 .catalogue__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  @media (min-width: $vp-768) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (min-width: $vp-1024) {
-    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: $vp-1280) {
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -69,20 +75,12 @@
 }
 
 .catalogue__item-photo {
-  min-width: 270px;
   box-sizing: border-box;
   opacity: 1;
 
   img {
     height: 386px;
-  }
-
-  @media (min-width: $vp-768) {
-    min-width: 309px;
-  }
-
-  @media (min-width: $vp-1024) {
-    min-width: 260px;
+    width: 100%;
   }
 }
 
