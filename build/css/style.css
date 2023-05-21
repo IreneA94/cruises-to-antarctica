@@ -808,7 +808,6 @@ button,
   opacity: 0;
   padding: 30px 25px;
   width: 100%;
-  min-height: 386px;
   height: 100%;
   background-color: #011c40;
   color: #f9fbfd;
@@ -924,7 +923,7 @@ button,
 }
 
 .catalogue__item-photo img {
-  min-height: 386px;
+  height: 386px;
   width: 100%;
 }
 
@@ -2180,6 +2179,11 @@ button,
 @media (min-width: 375px) {
   .advantages__list-item h3 br {
     display: none;
+  }
+
+  .catalogue__item-photo img {
+    height: auto;
+    min-height: 386px;
   }
 }
 

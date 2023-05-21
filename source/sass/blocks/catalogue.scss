@@ -79,8 +79,13 @@
   opacity: 1;
 
   img {
-    min-height: 386px;
+    height: 386px;
     width: 100%;
+
+    @media (min-width: $vp-375) {
+      height: auto;
+      min-height: 386px;
+    }
 
     @media (min-width: $vp-768) {
       max-height: 386px;
