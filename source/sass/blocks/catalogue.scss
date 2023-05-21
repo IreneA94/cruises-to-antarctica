@@ -79,8 +79,12 @@
   opacity: 1;
 
   img {
-    height: 386px;
+    min-height: 386px;
     width: 100%;
+
+    @media (min-width: $vp-768) {
+      max-height: 386px;
+    }
   }
 }
 
